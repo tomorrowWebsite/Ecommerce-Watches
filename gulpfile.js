@@ -20,7 +20,7 @@ gulp.task("html", function () {
 // ===== Task Scss En =====
 gulp.task("scss", function () {
   return gulp
-    .src("project/scss-en/*.scss")
+    .src("project/scss/*.scss")
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
     .pipe(autoprefixer("last 20 versions"))
