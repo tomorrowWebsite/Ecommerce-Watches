@@ -20,6 +20,187 @@ html(lang="en")
         a(href="#" class="nav__logo")
           i( class='bx bxs-watch nav__logo-icon')
           |Rolex
+        div(class="nav__menu" id="nav-menu")
+          ul(class='nav__list') 
+            li(class='nav__item') 
+              a(ref="#home" class="nav__link active-link") Home
+            li(class='nav__item') 
+              a(ref="#featured" class="nav__link active-link") Featured  
+            li(class='nav__item') 
+              a(ref="#products" class="nav__link active-link") Products  
+            li(class='nav__item') 
+              a(ref="#new" class="nav__link active-link") New
+          div(class="nav__close" id="nav-close")
+            i(class='bx bx-x')
+        div(class="nav__btns")
+          i(class='bx bx-moon change-theme' id="theme-button")
+          div(class="nav__shop" id="cart-shop")
+            i(class='bx bx-shopping-bag')
+          div(class="nav__toggle" id="nav-toggle")
+            i(class='bx bx-grid-alt')
+
+    //- CART 
+    div(class="cart" id="cart")
+      i(class='bx bx-x cart__close' id="cart-close")
+      h2(class="cart__title-center") Cart
+      div(class='cart__container')
+        article(class='cart__card') 
+          div(class='cart__box')
+            img(src="images/featured1.png" alt="" class="cart__img")
+          div(class='cart__details')
+            h3(class='cart__title') Jazzmaster
+            span(class='cart__price') $1050
+            div(class='cart__amount')
+              div(class='cart__amount-content')
+                span(class='cart__amount-box')
+                  i(class='bx bx-minus')
+                span(class="cart__amount-number") 1
+                span(class="cart__amount-box")
+                  i(class='bx bx-plus')
+              i(class='bx bx-trash-alt cart__amount-trash')
+        article(class='cart__card') 
+          div(class='cart__box')
+            img(src="images/featured2.png" alt="" class="cart__img")
+          div(class='cart__details')
+            h3(class='cart__title') Jazzmaster
+            span(class='cart__price') $1050
+            div(class='cart__amount')
+              div(class='cart__amount-content')
+                span(class='cart__amount-box')
+                  i(class='bx bx-minus')
+                span(class="cart__amount-number") 1
+                span(class="cart__amount-box")
+                  i(class='bx bx-plus')
+              i(class='bx bx-trash-alt cart__amount-trash')
+        article(class='cart__card') 
+          div(class='cart__box')
+            img(src="images/featured3.png" alt="" class="cart__img")
+          div(class='cart__details')
+            h3(class='cart__title') Jazzmaster
+            span(class='cart__price') $1050
+            div(class='cart__amount')
+              div(class='cart__amount-content')
+                span(class='cart__amount-box')
+                  i(class='bx bx-minus')
+                span(class="cart__amount-number") 1
+                span(class="cart__amount-box")
+                  i(class='bx bx-plus')
+              i(class='bx bx-trash-alt cart__amount-trash')
+      div(class="cart__prices") 
+        span(class="cart__prices-item") 3 items
+        span(class="cart__prices-total") $2880
+
+    //- main 
+    main(class="main") 
+      //- Home
+      section(class="home" id="home") 
+        div(class="home__container container grid")
+          div(class="home__img-bg")
+            img(src="images/home.png" alt="" class="home__img")
+          div(class="home__social")
+            a(href="https://www.facebook.com/profile.php?id=100075098419491" target="_blank" class="home__social-link") Facebook
+            a(href="https://twitter.com/TomorrowWebsite" target="_blank" class="home__social-link") Twitter
+            a(href="https://www.instagram.com/tomorrow.website/" target="_blank" class="home__social-link") Instagram
+          div(class="home__data")
+            h1(class="home__title") 
+              |NEW WATCH 
+              br 
+              |COLLECTIONS B720
+            p(class="home__description") Latest arrival of the new imported watches of the B720 series, with a modern and resistant design.
+            span(class="home__price") $1245
+            div(class="home__btns")
+              a(href="#" class="button button--gray button--small") Discover
+              button(class="button home__button") ADD TO CART
+
+      section(class="featured section container" id="featured")
+        h2(class="section__title") Featured
+        div(class="featured__container grid")
+          article(class="featured__card") 
+            span(class="featured__tag") Sale
+            img(src="images/featured1.png" alt="" class="featured__img")
+            div(class="featured__data")
+              h3(class="featured__title") Jazzmaster
+              span(class="featured__price" ) $1050
+            button(class="button featured__button") ADD TO CART
+          article(class="featured__card") 
+            span(class="featured__tag") Sale
+            img(src="images/featured2.png" alt="" class="featured__img")
+            div(class="featured__data")
+              h3(class="featured__title") Rose gold
+              span(class="featured__price" ) $980
+            button(class="button featured__button") ADD TO CART
+          article(class="featured__card") 
+            span(class="featured__tag") Sale
+            img(src="images/featured3.png" alt="" class="featured__img")
+            div(class="featured__data")
+              h3(class="featured__title") Ingersoll
+              span(class="featured__price" ) $250
+            button(class="button featured__button") ADD TO CART
+
+      section(class="story section container")
+        div(class="story__container grid")
+          div(class="story__data")
+            h2(class="section__title story__section-title") Our Story
+            h1(class="story__title") Inspirational Watch of   
+              br 
+              |this year
+            p(class="story__description") The latest and modern watches of this year, is available in various  presentations in this store, discover them now.
+            a(href="#" class="button button--small") Discover
+          div(class="story__images")
+            img(src="images/story.png" alt="" class="story__img")
+            div(class="story__square")
+
+      section(class="products section container" id="products")
+        h2(class="section__title") Products
+        div(class="products__container grid")
+          article(class="products__card")
+            img(src="images/product1.png" alt="" class="products__img")
+            h3(class="products__title") Spirit rose
+            span(class="products__price") $1500
+            button(class="products__button")
+              i(class='bx bx-shopping-bag')
+          article(class="products__card")
+            img(src="images/product2.png" alt="" class="products__img")
+            h3(class="products__title") Spirit rose
+            span(class="products__price") $1500
+            button(class="products__button")
+              i(class='bx bx-shopping-bag')
+          article(class="products__card")
+            img(src="images/product3.png" alt="" class="products__img")
+            h3(class="products__title") Spirit rose
+            span(class="products__price") $1500
+            button(class="products__button")
+              i(class='bx bx-shopping-bag')
+          article(class="products__card")
+            img(src="images/product3.png" alt="" class="products__img")
+            h3(class="products__title") Spirit rose
+            span(class="products__price") $1500
+            button(class="products__button")
+              i(class='bx bx-shopping-bag')
+          article(class="products__card")
+            img(src="images/product5.png" alt="" class="products__img")
+            h3(class="products__title") Spirit rose
+            span(class="products__price") $1500
+            button(class="products__button")
+              i(class='bx bx-shopping-bag')
+
+      section(class="testimonial section container") 
+        div(class="testimonial__container grid")
+          div(class="swiper testimonial-swiper")
+            div(class="swiper-wrapper")
+              div(class="testimonial__card swiper-slide")
+                div(class="testimonial__quote")
+                  i(class='bx bxs-quote-alt-left' )
+                p(class="testimonial__description") They are the best watches that one acquires, also they are always with the latest news and trends, with a very comfortable price and especially with the attention  you receive, they are always attentive to your questions.
+                h3(class="testimonial__date") March 27. 2021
+                div(class="testimonial__perfil")
+                  img(src="images/testimonial1.jpg" alt="" class="testimonial__perfil-img")
+                  div(class="testimonial__perfil-data")
+                    span(class="testimonial__perfil-name") Lee Doe
+                    span(class="testimonial__perfil-detail") Director of a company
+
+
+
 
 
 
