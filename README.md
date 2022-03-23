@@ -15,7 +15,7 @@
 
 # Plugins
 
-1. Swioer
+1. Swier [Website](https://swiperjs.com/)
 
 # Website
 
