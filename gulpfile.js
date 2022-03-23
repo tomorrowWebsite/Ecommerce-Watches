@@ -41,7 +41,7 @@ gulp.task("libs-css", function () {
 // ===== Task Js =====
 gulp.task("js", function () {
   return gulp
-    .src("project/js/js/**/*.js")
+    .src("project/js/**/*.js")
     .pipe(sourcemaps.init())
     .pipe(concat("script.js"))
     .pipe(uglify())
@@ -87,7 +87,7 @@ gulp.task("watch", function () {
   gulp.watch("project/scss/**/*.scss", gulp.series("scss"));
   gulp.watch("project/libs-css/**/*", gulp.series("libs-css"));
   // = Javascript
-  gulp.watch("project/js/js/**/*.js", gulp.series("js"));
+  gulp.watch("project/js/**/*.js", gulp.series("js"));
   gulp.watch("project/libs-js/**/*", gulp.series("libs-js"));
   // = Images
   gulp.watch("project/images/**/*", gulp.series("compressImages"));
