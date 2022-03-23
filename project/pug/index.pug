@@ -184,6 +184,7 @@ html(lang="en")
             button(class="products__button")
               i(class='bx bx-shopping-bag')
 
+      //- testimonial
       section(class="testimonial section container") 
         div(class="testimonial__container grid")
           div(class="swiper testimonial-swiper")
@@ -198,11 +199,126 @@ html(lang="en")
                   div(class="testimonial__perfil-data")
                     span(class="testimonial__perfil-name") Lee Doe
                     span(class="testimonial__perfil-detail") Director of a company
+              div(class="testimonial__card swiper-slide")
+                div(class="testimonial__quote")
+                  i(class='bx bxs-quote-alt-left' )
+                p(class="testimonial__description") They are the best watches that one acquires, also they are always with the latest news and trends, with a very comfortable price and especially with the attention  you receive, they are always attentive to your questions.
+                h3(class="testimonial__date") March 27. 2021
+                div(class="testimonial__perfil")
+                  img(src="images/testimonial1.jpg" alt="" class="testimonial__perfil-img")
+                  div(class="testimonial__perfil-data")
+                    span(class="testimonial__perfil-name") Samantha Mey
+                    span(class="testimonial__perfil-detail") Director of a company
+              div(class="testimonial__card swiper-slide")
+                div(class="testimonial__quote")
+                  i(class='bx bxs-quote-alt-left' )
+                p(class="testimonial__description") They are the best watches that one acquires, also they are always with the latest news and trends, with a very comfortable price and especially with the attention  you receive, they are always attentive to your questions.
+                h3(class="testimonial__date") March 27. 2021
+                div(class="testimonial__perfil")
+                  img(src="images/testimonial1.jpg" alt="" class="testimonial__perfi3-img")
+                  div(class="testimonial__perfil-data")
+                    span(class="testimonial__perfil-name") Raul Zaman
+                    span(class="testimonial__perfil-detail") Director of a company
+            div(class="swiper-button-next")
+              i(class='bx bx-right-arrow-alt')
+            div(class="swiper-button-prev")
+              i(class='bx bx-right-arrow-alt')
+          div(class="testimonial__images")
+            div(class="testimonial__square")
+              img(src="images/testimonial.png" alt="" class="testimonial__img")
+
+      //- New
+      section(class="new section container" id="new")
+        h2(class="section__title") New Arrivals
+        div(class="new__container")
+          div(class="swiper new-swiper")
+            div(class="swiper-wrapper")
+              article(class="new__card swiper-slide") 
+                span(class="new__tag") New
+                img(src="images/new1.png" alt="" class="new__img")
+                div(class="new__data")
+                  h3(class="new__title") Longines rose
+                  span(class="new__price") $980
+                button(class="button new__button") ADD TO CART
+              article(class="new__card swiper-slide") 
+                span(class="new__tag") New
+                img(src="images/new2.png" alt="" class="new__img")
+                div(class="new__data")
+                  h3(class="new__title") Jazzmaster
+                  span(class="new__price") $1150
+                button(class="button new__button") ADD TO CART
+              article(class="new__card swiper-slide") 
+                span(class="new__tag") New
+                img(src="images/new3.png" alt="" class="new__img")
+                div(class="new__data")
+                  h3(class="new__title") Dreyfuss gold
+                  span(class="new__price") $750
+                button(class="button new__button") ADD TO CART
+              article(class="new__card swiper-slide") 
+                span(class="new__tag") New
+                img(src="images/new4.png" alt="" class="new__img")
+                div(class="new__data")
+                  h3(class="new__title") Portuguese rose
+                  span(class="new__price") $1590
+                button(class="button new__button") ADD TO CART
 
 
+      //- NEWSLETTER 
+      section(class="newsletter section container")
+        div(class="newsletter__bg grid")
+          div()
+            h2(class="newsletter__title") Subscribe Our 
+              br 
+              |Newsletter
+            p(class="newsletter__description") Don't miss out on your discounts. Subscribe to our email  newsletter to get the best offers, discounts, coupons, gifts and much more.
+          form(action="" class="newsletter__subscribe")
+            input(type="email" placeholder="Enter your email" class="newsletter__input")
+            button(class='button') SUBSCRIBE
 
+    footer(class="footer section")
+      div(class="footer__container container grid")
+        div(class="footer__content")
+          h3(class="footer__title") Our information
+          ul(class="footer__list")
+            li() 1234 - Peru
+            li() La Libertad 43210
+            li() 123-456-789
+        div(class="footer__content")
+          h3(class="footer__title") About Us
+          ul(class="footer__list")
+            li() 
+              a(href="#" class="footer__link") Support Center
+            li() 
+              a(href="#" class="footer__link") Customer Support
+            li() 
+              a(href="#" class="footer__link") About Us
+            li() 
+              a(href="#" class="footer__link") Copy Right
 
+        div(class="footer__content")
+          h3(class="footer__title") Product
+          ul(class="footer__list")
+            li()
+              a(href="#" class="footer__link") Road bikes
+            li() 
+              a(href="#" class="footer__link") Mountain bikes
+            li() 
+              a(href="#" class="footer__link") Electric
+            li() 
+              a(href="#" class="footer__link") Accesories
+        div(class="footer__content")
+          h3(class="footer__title") Social
+          ul(class="footer__social")
+            a(href="https://www.facebook.com/" target="_blank" class="footer__social-link")
+              i(class='bx bxl-facebook')
+            a(href="https://www.twitter.com/" target="_blank" class="footer__social-link")
+              i(class='bx bxl-twitter')
+            a(href="https://www.instagram.com/" target="_blank" class="footer__social-link")
+              i(class='bx bxl-instagram')
+      span(class="footer__copy") &#169; Bedimcode. All rigths reserved
 
+    a(href="#" class="scrollup" id="scroll-up")
+      i(class='bx bx-up-arrow-alt scrollup__icon' )
 
     script(src="js/swiper-bundle.min.js")
     script(src="js/script.js")
