@@ -11,4 +11,6 @@
 
 # Plugins
 * Swioer
-![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+
+# Previw
+![This is an image](https://raw.githubusercontent.com/tomorrowWebsite/Ecommerce-Watches/main/dist/preview.png)
