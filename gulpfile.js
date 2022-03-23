@@ -54,7 +54,8 @@ gulp.task("js", function () {
 gulp.task("libs-js", function () {
   return gulp
     .src("project/libs-js/**/*")
-    .pipe(gulp.dest("dist/js/libs"))
+    
+    .pipe(gulp.dest("dist/js"))
     .pipe(livereload())
     .pipe(notify("Libs js Task Is Done"));
 });
