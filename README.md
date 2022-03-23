@@ -1,2 +1,2 @@
-# Ecommerce-Watches
-Responsive Watches Website ⌚
+# Ecommerce Watches
+** Responsive Watches Website ⌚
