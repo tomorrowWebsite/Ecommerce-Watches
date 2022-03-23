@@ -1,2 +1,9 @@
 # Ecommerce Watches
-** Responsive Watches Website ⌚
+* Responsive Watches Website ⌚
+
+# Tools
+* Pug
+* Scss
+
+# Plugins
+* Swioer
